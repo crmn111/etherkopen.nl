@@ -1,21 +1,23 @@
 /* header -------------------------- */
 header {
     padding: 0;
-    background: url('../assets/patterns/vichy.png') repeat;
+
+    background-color: $bgcolor;
     font: 24px/36px $fontCaption;
     color: $white;
     /*@include bgsize;*/
     @include sizing;
 
 
-
+    a {
+        color:$link;
+    }
     p {
         color:#fff;
     }
     .layer {
         height:100%;
         padding:104px 0;
-        background-color:rgba(0,0,0,.6);
 
         /*background-color:rgba(255,255,255,.1);*/
 
@@ -28,8 +30,7 @@ header {
     }
 
     h1 {
-        font-size: 60px;
-        line-height: 60px;
+        font-size: 3.8vmin;
         font-weight: $f-medium;
         margin-bottom: 38px;
         span {

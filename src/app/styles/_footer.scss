@@ -1,17 +1,27 @@
 /* footer -------------------------- */
 footer {
-	background:rgba(0,0,0,.8);
     color: $white;
-    font-size: 16px;
-    line-height: 28px;
-    padding: 90px 0;
+    text-align: center;
+    min-height:15em;
+    line-height:4rem;
+    font-size: 2.4rem;
+
+    background-color: $bgcolor;
+
+    position: relative;
     text-align: center;
 
+    .layer {
+        position: absolute;
+        display: inline-block;
+        left:50%;
+        top: 50%;
+        width:100%;
+        transform: translateY(-50%) translateX(-50%);
+    }
 
-    @include sizing;
 
-    a {
-        font-weight:bold;
+    p,strong, a {
         color:#fff;
     }
 }

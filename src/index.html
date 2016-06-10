@@ -2,9 +2,9 @@
 <html ng-app="etherkopen2">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="favicon.ico?v=2">
-    <title ng-bind="$state.current.data.pageTitle">Ether kopen (Ethereum).</title>
-    <meta name="description" content="{{$state.current.data.pageDescription}}">
+    <link rel="shortcut icon" href="favicon.ico?v=3">
+    <title ng-bind="$state.current.data.pageTitle">Ether kopen (Ethereum) met Bitcoin</title>
+    <meta name="description" ng-attr-content="{{$state.current.data.pageDescription}}">
     <meta name="keywords" content="ethereum, ether, bitcoin, eth, buy">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
@@ -48,10 +48,11 @@
     <!-- endinject -->
     <!-- endbuild -->
   </head>
-  <body>
+  <body ng-class="$statename">
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
 
     <div ui-view></div>
 
