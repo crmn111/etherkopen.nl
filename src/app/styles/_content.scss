@@ -441,3 +441,19 @@ section#trades {
     border:1px solid #dedede;
     border-radius:5px;
 }
+
+div.iframe {
+    text-align: right;
+
+    @media (min-width: 0) and (max-width: 300px) {
+        padding:2px!important;
+    }
+
+
+    @media (min-width: 0) and (max-width: 1020px) {
+        margin-top:30px;
+        text-align: center!important;
+
+    }
+
+}

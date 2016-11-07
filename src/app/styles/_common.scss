@@ -25,6 +25,8 @@ body {
     padding: 0 15px;
     width:$wrap70;
 
+    transition: width 1s ease-in-out;
+
 
     @media (min-width: 0px) and (max-width: 1600px) {
         width: $wrap95!important;
