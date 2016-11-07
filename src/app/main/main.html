@@ -2,12 +2,9 @@
   <header>
     <div class="layer">
       <div class="wrap">
-        <a ui-sref="home" class="logo"><img src="/assets/images/ETH-alt.svg"/> Etherkopen.nl</a>
-        <div class="header-wrapper">
-          <h1>Ether kopen <span>(Ethereum)</span></h1>
-        </div>
+        <a ui-sref="home" class="logo"><img src="/assets/images/etherkopen.png"/></a>
 
-        <div class="row top50">
+        <div class="row top30">
 
           <div class="col-md-6">
             <p>Ether (ETH) is een verhandelbaar token/ bezit, het fungeert als brandstof voor Ethereum resources, zoals smart contracts.</p>
@@ -15,10 +12,13 @@
             <p>Ethereum is een gedecentraliseerd ontwikkel platform waarop smart contracts uitgevoerd worden; wat dat precies betekent kunt u zien in de video's.</p>
           </div>
 
-
           <div class="col-md-6 iframe text-right">
+            <div class="header-wrapper text-center">
+              <h1>Ether kopen <span>(Ethereum)</span></h1>
+            </div>
+
             <div class="iframer">
-              <iframe src="https://swap.innocoin.com/#/?language=nederlands&partner_email=partner@innocoin.com&partner_name=etherkopen.nl&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=5&show_info=true&theme=white_carbon&rounded_corners=false&width=500&height=470&border=false&iframe=true" border="0" scrolling="no" class="innocoin w500 h470"></iframe>
+              <iframe ng-src="{{vm.iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"></iframe>
             </div>
           </div>
 
@@ -27,6 +27,16 @@
       </div>
     </div>
   </header>
+
+  <section id="trades" class="top100">
+    <div class="wrap">
+      <h2 translate="HEADER_CONVERSIONS" class="section-heading top70"></h2>
+      <div class="trades-container">
+        <iframe ng-src="{{vm.iframe2}}" ng-if="!debug" class="trades-widget top20"></iframe>
+      </div>
+    </div>
+  </section>
+
   <div class="spanning">
     <div class="promo clearfix">
       <div class="wrap">
@@ -215,7 +225,7 @@
 
 
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-3">
 
 
             <img src="assets/images/ethereum-city.jpg">
@@ -228,7 +238,7 @@
           </div>
 
 
-          <div class="col-md-7">
+          <div class="col-md-9">
 
             <h3>Waarom wij denken dat Ethereum een zonnige toekomst heeft</h3>
 
@@ -236,15 +246,11 @@
 
             <p>In plaats van 500 - 1000 alternatieven van bitcoin te creeren, die allemaal aparte use cases afhandelen en die features aanbieden die zijn gericht op specifieke markten, zien wij veel potentie in de visie van <a href="https://en.wikipedia.org/wiki/Vitalik_Buterin">Vitalik Buterin</a>; hij heeft namelijk een open ontwikkel platform gecreerd bovenop een blockchain (blockchain is techniek achter bitcoin die de transacties samenvoegd in een 'block' en verwerkt, gebruik makende van een <a href="http://chimera.labs.oreilly.com/books/1234000001802/ch07.html#merkle_trees">Merkle Tree</a> om alle transacties te linken aan het block), dit idee biedt oneindige mogelijkheden en alles wat je kan verzinnen kan op die manier worden geprogrammeerd op de Ethereum blockchain, gebruik makende van zogenaamde 'smart contracts'. </p>
 
-            <p>Voorbeelden van prototype applicaties die zijn gebouwd op de Ethereum blockchain zijn momenteel in ontwikkeling en zijn erg indrukwekkend, voorbeelden zijn <a href="http://slock.it">slock.it</a>  (een smart contract software/ hardware slot) en  <a href="http://www.augur.net/">augur</a> (een gedecentraliseerd voorspelling netwerk).</p>
-
             <p>Er is ook veel corporate interesse in het bouwen van applicaties die niet-muteerbare opgeslagen data nodig hebben, daarnaast is er interesse om <a href="https://www.youtube.com/watch?v=kq8RPbFz5UU">micro electriciteit netwerken</a> efficient te laten verlopen met Ethereum, bijvoorbeeld door het automatisch leveren van energie van je zonneboiler aan je buurt als de electriciteit is uitgevallen en daar ook automatisch voor betaald worden. Daarnaast hebben banken interesse en hun <a href="http://www.ibtimes.co.uk/r3-connects-11-banks-distributed-ledger-using-ethereum-microsoft-azure-1539044">blockchain consortium</a> hebben de eerste testen aangekondigd met Ethereum.</p>
 
-            <p>Vanuit een investeerders perspectief is Ethereum ook interessant (en ook erg riskant, vergelijkbaar met Bitcoin), Ether is een verhandelbaar eigendom en kan gekocht worden op exchanges zoals Kraken en Poloniex. Op dit moment zijn twee van de vier releases gerealiseerd en nog niet zoveel exchanges (met hoog volume) verkopen Ether. Specifiek Chinese exchanges zoals OKCoin en Huobi (waar veel volume zit) hebben Ether nog niet ontdekt lijkt het. Ook coinbase en bitbay verhandelen geen Ether.</p>
+            <p>Vanuit een investeerders perspectief is Ethereum ook interessant (en ook erg riskant, vergelijkbaar met Bitcoin), Ether is een verhandelbaar eigendom en kan gekocht worden op exchanges zoals Kraken en Poloniex. Op dit moment zijn twee van de vier releases gerealiseerd en nog niet zoveel exchanges (met hoog volume) verkopen Ether. </p>
 
-            <p>Er komen nog 2 releases aan totdat het product mature is (alhoewel de huidige homestead release al als stable wordt gezien), in de tussentijd gaan Augur en Slock.it al releasen op basis van Ethereum.</p>
-
-            <p>Overheden, grootzakelijk, banken en developers kijken met grote interesse naar Ethereum.</p>
+            <p>Overheden, grootzakelijk, banken en developers kijken met grote interesse naar Ethereum. </p>
 
           </div>
 

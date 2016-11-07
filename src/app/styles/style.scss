@@ -9,6 +9,8 @@
 @import "sidebar";
 @import "media";
 
+.top20 { margin-top:20px;}
+.top30 { margin-top:30px;}
 .top50 { margin-top:50px;}
 
 .logo {
@@ -17,7 +19,7 @@
   font-size:1.8em;
   transition: color 1s;
   img {
-    height:50px;
+    width:300px;
     vertical-align: middle;
     color:#fff;
   }
