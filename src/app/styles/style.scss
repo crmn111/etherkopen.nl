@@ -70,4 +70,10 @@ div.iframer {
   border-radius: 2px;
   display: inline-block;
   max-height:476px;
+  float:left;
+
+  @media (min-width: 0px) and (max-width: 1024px) {
+    float:none!important;
+    clear:both!important;
+  }
 }

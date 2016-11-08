@@ -3,7 +3,7 @@
         <div class="layer">
             <div class="wrap">
 
-                <a ui-sref="home" class="logo"><img src="/assets/images/ETH-alt.svg"/>  Etherkopen.nl</a>
+                <a ui-sref="home" class="logo"><img src="/assets/images/etherkopen.png"/></a>
 
                 <div class="header-wrapper">
                     <h1>Uitleg Ethereum wallet installeren en daarna Ether kopen met behulp van de ether aankoop widget.</h1>
@@ -22,8 +22,8 @@
                     <div class="col-md-6">
                         <p>
 
-                            <i class="fa fa-arrow-left hidden-sm"></i>
-                            <i class="fa fa-arrow-down visible-sm"></i>
+                            <i class="fa fa-arrow-left hidden-sm hidden-xs"></i>
+                            <i class="fa fa-arrow-down visible-sm visible-xs top50"></i>
 
                             Hier ziet u de Ether aankoop widget. Indien u reeds bitcoin heeft is het mogelijk met deze widget bitcoin om te wisselen in Ether. We zullen hieronder beschrijven hoe dat werkt.</p>
 
@@ -156,9 +156,9 @@
 
                     <p>U dient ook het aantal ETH dat u wilt ontvangen op te geven.</p>
 
-                    <p>Er kan momenteel een maximum van {{vm.max}} BTC aan ETH kan worden gekocht.</p>
+                    <p>Er kan momenteel een maximum van {{vm.max | number : 6}} BTC aan ETH kan worden gekocht.</p>
 
-                    <p>Indien u het maximum wilt kopen, kunt ook dit ook aangeven in de BTC box, door daar {{vm.max}} BTC in te vullen. Het juiste aantal Ethers wordt dan automatisch berekend.</p>
+                    <p>Indien u het maximum wilt kopen, kunt ook dit ook aangeven in de BTC box, door daar 'Stel maximaal aantal in' ({{vm.max | number : 2}} BTC) aan te clicken. Het juiste aantal Ethers wordt dan automatisch berekend.</p>
 
                     <p>Tevens dient u hier uw e-mail adres op te geven, daar zult u op de hoogte worden gehouden van de voortgang in het orderproces. U ontvangt direct een eerste mailtje na het drukken op de groene knop.</p>
 
@@ -177,7 +177,7 @@
                     <img src="/assets/images/qrcode.png"/>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 text-left">
                     <h4>Stap 6. Plaats de order en doe de betaling</h4>
 
                     <p>Als u in bovenstaand plaatje op de groene bestelknop drukt krijgt u de QR code te zien, zoals te zien in het plaatje links hiernaast.</p>
@@ -200,10 +200,6 @@
             <div class="row top50">
                 <div class="col-md-12">
                     <h4>Gefeliciteerd, uw transactie is nu compleet</h4>
-
-                    <img src="/assets/images/ETH-alt.svg"/>
-
-
 
                 </div>
 
